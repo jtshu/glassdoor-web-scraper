@@ -187,7 +187,7 @@ def chatgpt_rephrase(question: str) -> str:
     return completion.choices[0].message.content
 
 def get_solution_from_chatgpt(question: str, company_name: str) -> str:
-    os.environ["OPENAI_API_KEY"] = "sk-proj-ummOvcmwwdUXDQ2JartiT3BlbkFJZd7ajMHCkuyAZlJNIGro" # Need to move this to an env file
+    os.environ["OPENAI_API_KEY"] = "" # Need to use env file to populate this key
     
     client = OpenAI()
 
