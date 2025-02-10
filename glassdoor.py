@@ -171,7 +171,7 @@ def read_company_names_from_csv(csv_file: str) -> List[str]:
     return company_names
 
 def chatgpt_rephrase(question: str) -> str:
-    os.environ["OPENAI_API_KEY"] = "sk-proj-ummOvcmwwdUXDQ2JartiT3BlbkFJZd7ajMHCkuyAZlJNIGro" # Need to move this to an env file
+    os.environ["OPENAI_API_KEY"] = "" # Need to use env file to populate this key
     
     client = OpenAI()
 
