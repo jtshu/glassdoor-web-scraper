@@ -170,6 +170,7 @@ def read_company_names_from_csv(csv_file: str) -> List[str]:
             company_names.append(row[0])
     return company_names
 
+# AI-stuff is completely optional and can be removed, though the output csv columns might need to be adjusted
 def chatgpt_rephrase(question: str) -> str:
     os.environ["OPENAI_API_KEY"] = "" # Need to use env file to populate this key
     
